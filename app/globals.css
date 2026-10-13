@@ -1,0 +1,42 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #f8f1e3; --card: #ffffff; --text: #222222;
+  --muted: #6b5d4b; --gold: #e6b91e; --red: #c0392b;
+  --red-hover: #a02d22; --beige: #f3e7cd; --radius: 10px;
+}
+body { font-family: "Segoe UI", Tahoma, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; }
+.layout-container { max-width: 900px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; padding: 24px 16px; }
+.site-header { background-color: var(--text); color: var(--bg); padding: 18px 24px; border-radius: var(--radius); margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid var(--gold); }
+.brand { display: flex; align-items: center; gap: 10px; }
+.logo-icon { font-size: 26px; }
+.brand-title { font-size: 22px; font-weight: 800; color: #fff; text-decoration: none; }
+.site-nav { display: flex; align-items: center; gap: 18px; }
+.site-nav a { color: var(--bg); text-decoration: none; font-weight: 600; font-size: 14px; }
+.site-nav a:hover { color: var(--gold); }
+.main-content { flex: 1; margin-bottom: 30px; }
+.card { background-color: var(--card); border: 2px solid var(--text); border-top: 8px solid var(--gold); border-radius: var(--radius); padding: 28px 24px; }
+.hero-card { text-align: center; }
+.btn-primary { background-color: var(--red); color: #fff; border: 2px solid var(--text); padding: 10px 20px; border-radius: 6px; font-weight: bold; text-decoration: none; display: inline-block; cursor: pointer; }
+.btn-primary:hover { background-color: var(--red-hover); transform: translateY(-2px); }
+.btn-secondary { background-color: var(--beige); color: var(--text); border: 1px solid var(--text); padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-block; }
+.chip-bar { display: flex; gap: 10px; margin-bottom: 20px; overflow-x: auto; }
+.chip { background-color: var(--card); border: 2px solid var(--text); padding: 7px 18px; border-radius: 20px; font-size: 14px; font-weight: 700; color: var(--text); text-decoration: none; }
+.chip:hover, .chip.on { background-color: var(--gold); transform: translateY(-2px); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+.dish-card { background-color: var(--card); border: 2px solid var(--text); border-top: 8px solid var(--gold); border-radius: var(--radius); padding: 18px; display: flex; flex-direction: column; justify-content: space-between; min-height: 160px; }
+.price { font-size: 18px; font-weight: 800; color: var(--red); }
+.card-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 12px; border-top: 1px dashed #cbd5e1; }
+.btn-add { background-color: var(--red); color: #fff; border: none; padding: 6px 14px; border-radius: 6px; font-weight: bold; font-size: 13px; cursor: pointer; }
+.link-detail { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 700; }
+.category-pill { background-color: var(--beige); padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+.checkout-form { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+.checkout-form label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; font-weight: 600; }
+.checkout-form input, .checkout-form select { padding: 10px; border: 1px solid #cbd5e0; border-radius: 6px; font-size: 14px; }
+.field-err { color: var(--red); font-size: 12px; font-weight: 600; }
+.cart-list { list-style: none; margin: 16px 0; }
+.cart-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #ccc; }
+.btn-del { background: #fee2e2; color: var(--red); border: none; border-radius: 50%; width: 22px; height: 22px; cursor: pointer; font-weight: bold; }
+.state-banner { padding: 30px; border-radius: var(--radius); text-align: center; font-weight: bold; background-color: #fff; border: 1px dashed var(--muted); }
+.state-banner.error { border-color: var(--red); color: var(--red); background-color: #fee2e2; }
+.site-footer { text-align: center; padding: 20px; color: var(--muted); font-size: 13px; border-top: 2px solid var(--beige); margin-top: auto; }
+.empty-msg { font-style: italic; color: var(--muted); }
